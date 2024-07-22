@@ -23,6 +23,7 @@ document.getElementById('btnSave').addEventListener('click', async (event) => {
             fono: document.getElementById('fono').value,
             email: document.getElementById('email').value,
             contra: document.getElementById('contra').value,
+            tipo: document.getElementById('tipo').value
         };
         console.log(usr)
           try {
@@ -59,6 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 <td>${datos.fecha_ter}</td>
                 <td>${datos.nombre_c}</td>
                 <td>${datos.fono}</td>
+                <td>${datos.tipo}</td>
                 <td nowrap>
                     <button class="btn btn-warning" id="${usr.id}">Editar</button>
                     <button class="btn btn-danger" id="${usr.id}">Eliminar</button>
@@ -107,6 +109,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('fono').value = usr.fono;
                 document.getElementById('email').value = usr.email;
                 document.getElementById('contra').value = usr.contra;
+                document.getElementById('tipo').value = usr.contra;
                 id = doc.id;
                 const idElement = document.getElementById('id');
                 if (idElement) {

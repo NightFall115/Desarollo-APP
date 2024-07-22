@@ -34,6 +34,7 @@ window.addEventListener('DOMContentLoaded', async () => {
                 <td>${datos.fecha_ter}</td>
                 <td>${datos.nombre_c}</td>
                 <td>${datos.fono}</td>
+                <td>${datos.tipo}</td>
             </tr>`;
         });
         document.getElementById('usuarios').innerHTML = tabla;

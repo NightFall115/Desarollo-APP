@@ -89,6 +89,14 @@
                         <input type="password" id="contra" name="contra" class="form-control" onblur="verificar(this.id)">
                         <div id="e-contra"></div>
                     </div>
+                    <div class="mb-3">
+                        <label for="tipo" class="form-label">Tipo de Cuenta</label>
+                        <select name="tipo" id="tipo" class="form-control" onblur="verificar(this.id)">
+                            <option value="usuario">Usuario</option>
+                            <option value="administrador">Administrador</option>
+                        </select>
+                        <div id="e-tipo" class="text-danger"></div>
+                    </div>
                 <div class="card-footer text-center">
                     <input type="button" value="Limpiar" onclick="limpiar()" class="btn btn-info w-25">
                     <input type="submit" value="Guardar" id="btnSave" class="btn btn-success w-25">
@@ -111,6 +119,7 @@
                             <th>Fecha de Termino</th>
                             <th>Nombre de Contacto</th>
                             <th>Numero de Contacto</th>
+                            <th>Tipo de Cuenta</th>
                             <th></th>
                         </tr>
                     </thead>
